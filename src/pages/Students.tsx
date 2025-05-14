@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
@@ -42,7 +41,7 @@ const Students = () => {
       />
       
       <section className="py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
               <h2 className="text-3xl font-bold mb-8 font-raleway">Developers</h2>
@@ -86,7 +85,7 @@ const Students = () => {
       </section>
       
       <section className="py-16 md:py-24 bg-gray-50 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <div className="col-span-1 md:col-span-2">
               <h2 className="text-3xl font-bold mb-6 font-raleway">Open Source Projects</h2>
@@ -113,7 +112,7 @@ const Students = () => {
       </section>
       
       <section className="py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center font-raleway">Application Process</h2>
           
           <div className="flex justify-center mb-16">
@@ -173,7 +172,7 @@ const Students = () => {
       </section>
       
       <section className="py-16 md:py-24 bg-gray-50 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center font-raleway">Frequently Asked Questions</h2>
           
           <div className="bg-white rounded-lg shadow-md p-8">

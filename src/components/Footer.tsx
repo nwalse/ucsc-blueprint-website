@@ -1,15 +1,14 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="blueprint-grid-bg text-white">
+    <footer className="bg-[#262829] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <Link to="/">
-              <img src="/blueprint-logo.svg" alt="Blueprint Logo" className="h-8 mb-6" />
+              <img src="blueprint/blueprint-logo.svg" alt="Blueprint Logo" className="h-8 mb-6" />
             </Link>
             <p className="text-sm mb-2">Technology for nonprofits</p>
           </div>
@@ -43,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm mb-4 md:mb-0">© 2024 UCSC Blueprint. All rights reserved.</p>
           <div className="flex space-x-4">
             <a href="https://instagram.com" className="social-icon" aria-label="Instagram">

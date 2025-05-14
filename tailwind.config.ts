@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -15,7 +14,7 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
-				'2xl': '1400px'
+				'2xl': '1200px'
 			}
 		},
 		extend: {
@@ -88,7 +87,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out'
 			},
 			backgroundImage: {
-				'blueprint-grid': "url('/blueprint-grid-pattern.png')",
+				'blueprint-grid': "url('blueprint/blueprint-grid-pattern.png')",
 			}
 		}
 	},

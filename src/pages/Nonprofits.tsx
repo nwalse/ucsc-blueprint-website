@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
@@ -71,7 +70,7 @@ const Nonprofits = () => {
       </section>
       
       <section className="py-16 md:py-24 bg-gray-50 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center font-raleway">Our Services</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">

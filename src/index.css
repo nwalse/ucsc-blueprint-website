@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -93,7 +92,7 @@
 }
 
 .main-paragraph {
-  @apply text-lg mb-6 max-w-2xl text-center md:text-left;
+  @apply text-lg mb-6 max-w-xl text-center md:text-left;
 }
 
 .blueprint-button {
@@ -101,7 +100,7 @@
 }
 
 .section-container {
-  @apply max-w-7xl mx-auto px-4 py-16 md:py-24;
+  @apply max-w-5xl mx-auto px-4 py-16 md:py-24;
 }
 
 .section-heading {
@@ -113,7 +112,7 @@
 }
 
 .footer-container {
-  @apply max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8;
+  @apply max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8;
 }
 
 .footer-column {

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
@@ -40,7 +39,7 @@ const Team = () => {
       />
       
       <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 mb-16">
             <div className="md:w-1/3">
               <img src="https://via.placeholder.com/400x300?text=Blueprint+Logo" alt="Blueprint Logo" className="w-full" />

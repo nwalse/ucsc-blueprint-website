@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
@@ -13,14 +12,15 @@ const Index = () => {
         description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
         buttonText="View All Projects"
         buttonLink="/projects"
+        decorative
       />
       
       <section className="py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-raleway">About Us</h2>
+        <div className="max-w-5xl mx-auto">
           
           <div className="flex flex-col md:flex-row gap-12">
             <div className="md:w-1/2">
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 font-raleway">About Us</h2>
               <p className="mb-6 font-karla">UCSC Blueprint is a student-run organization founded in 2020, dedicated to making technology for social good.</p>
               <p className="mb-6 font-karla">We develop real-life web applications for non-profit organizations in Santa Cruz and beyond.</p>
               <p className="mb-6 font-karla">As part of our mission to foster a better community, we strive to foster a culture where we can improve our web development skills while helping amazing non-profits.</p>
@@ -35,7 +35,7 @@ const Index = () => {
             
             <div className="md:w-1/2">
               <img 
-                src="https://via.placeholder.com/600x400?text=Team+Photo" 
+                src="../photos/team.png" 
                 alt="Blueprint Team" 
                 className="rounded-md w-full h-auto"
               />
@@ -45,7 +45,7 @@ const Index = () => {
       </section>
       
       <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-6 text-center font-raleway">Are you a Student?</h3>
@@ -87,7 +87,7 @@ const Index = () => {
       </section>
       
       <section className="py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-raleway">Our Services</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -127,7 +127,7 @@ const Index = () => {
       </section>
       
       <section className="py-16 md:py-24 bg-gray-50 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-raleway">Our Projects</h2>
             <Link 
@@ -173,9 +173,9 @@ const Index = () => {
       </section>
       
       <section className="py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 font-raleway">Collaboration</h2>
-          <p className="text-lg max-w-3xl mx-auto mb-12 font-karla">
+          <p className="text-lg max-w-2xl mx-auto mb-12 font-karla">
             Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare. Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare.
           </p>
           <Link 

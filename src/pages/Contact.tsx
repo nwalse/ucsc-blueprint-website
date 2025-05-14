@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from '../components/Hero';
 import ContactForm from '../components/ContactForm';
@@ -12,7 +11,7 @@ const Contact = () => {
       />
       
       <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
           <div className="md:w-1/3">
             <h2 className="text-3xl font-bold mb-8 font-raleway">Have a question?</h2>
             <p className="mb-6 font-karla text-gray-700">
