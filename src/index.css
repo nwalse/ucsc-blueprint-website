@@ -122,3 +122,144 @@
 .social-icon {
   @apply w-6 h-6 text-white hover:opacity-80 transition-opacity;
 }
+
+/* Cloud animations with varying opacity levels */
+/* Left to right animations */
+@keyframes cloud-slide-5 {
+  0% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.05;
+  }
+  90% {
+    opacity: 0.05;
+  }
+  100% {
+    transform: translateX(120vw);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-slide-10 {
+  0% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.12;
+  }
+  90% {
+    opacity: 0.12;
+  }
+  100% {
+    transform: translateX(120vw);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-slide-15 {
+  0% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.08;
+  }
+  90% {
+    opacity: 0.08;
+  }
+  100% {
+    transform: translateX(120vw);
+    opacity: 0;
+  }
+}
+
+/* Right to left animations */
+@keyframes cloud-slide-rtl-5 {
+  0% {
+    transform: translateX(120vw);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.10;
+  }
+  90% {
+    opacity: 0.10;
+  }
+  100% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-slide-rtl-10 {
+  0% {
+    transform: translateX(120vw);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-slide-rtl-15 {
+  0% {
+    transform: translateX(120vw);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.15;
+  }
+  90% {
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+}
+
+/* Animation classes with speed variations */
+.animate-cloud-xslow {
+  animation: cloud-slide-5 120s linear infinite;
+}
+.animate-cloud-slow {
+  animation: cloud-slide-5 90s linear infinite;
+}
+.animate-cloud-medium {
+  animation: cloud-slide-5 80s linear infinite;
+}
+.animate-cloud {
+  animation: cloud-slide-5 75s linear infinite;
+}
+.animate-cloud-fast {
+  animation: cloud-slide-10 60s linear infinite;
+}
+.animate-cloud-vfast {
+  animation: cloud-slide-15 55s linear infinite;
+}
+
+.animate-cloud-rtl {
+  animation: cloud-slide-rtl-5 45s linear infinite;
+}
+.animate-cloud-slow-rtl {
+  animation: cloud-slide-rtl-5 90s linear infinite;
+}
+.animate-cloud-medium-rtl {
+  animation: cloud-slide-rtl-10 80s linear infinite;
+}
+.animate-cloud-fast-rtl {
+  animation: cloud-slide-rtl-15 60s linear infinite;
+}
+.animate-cloud-vfast-rtl {
+  animation: cloud-slide-rtl-15 55s linear infinite;
+}

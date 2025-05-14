@@ -22,6 +22,101 @@ const Hero = ({ title, description, buttonText, buttonLink, decorative = false }
             className="absolute top-0 left-1/4 md:left-1/3 w-32 md:w-40 opacity-90 pointer-events-none select-none"
             style={{ zIndex: 1 }}
           />
+
+          {/* Clouds - Left to Right */}
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-24 left-0 w-44 md:w-64 opacity-10 pointer-events-none select-none animate-cloud-xslow"
+            style={{ zIndex: 1}}
+          />
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-10 left-1/3 w-52 md:w-72 opacity-5 pointer-events-none select-none animate-cloud-medium"
+            style={{ zIndex: 1}}
+          />
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-1/2 left-1/4 w-40 md:w-56 opacity-5 pointer-events-none select-none animate-cloud-slow"
+            style={{ zIndex: 1 }}
+          />
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-1/3 left-2/3 w-44 md:w-64 opacity-10 pointer-events-none select-none animate-cloud-fast"
+            style={{ zIndex: 1}}
+          />
+          <img
+            src="/icons/cloud2.svg"
+            alt="Cloud"
+            className="absolute top-40 left-1/4 w-32 md:w-48 opacity-5 pointer-events-none select-none animate-cloud-slow"
+            style={{ zIndex: 1 }}
+          />
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-1/2 left-10 w-24 md:w-40 opacity-15 pointer-events-none select-none animate-cloud-fast"
+            style={{ zIndex: 1 }}
+          />
+          <img
+            src="/icons/cloud2.svg"
+            alt="Cloud"
+            className="absolute top-10 right-0 w-32 md:w-44 opacity-5 pointer-events-none select-none animate-cloud"
+            style={{ zIndex: 1}}
+          />
+
+          {/* Clouds - Right to Left */}
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-2/3 left-1/2 w-36 md:w-56 opacity-15 pointer-events-none select-none animate-cloud-slow-rtl"
+            style={{ zIndex: 1 }}
+          />
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-1/3 left-1/2 w-36 md:w-52 opacity-5 pointer-events-none select-none animate-cloud-medium-rtl"
+            style={{ zIndex: 1}}
+          />
+          <img
+            src="/icons/cloud2.svg"
+            alt="Cloud"
+            className="absolute top-2/3 left-1/3 w-28 md:w-40 opacity-5 pointer-events-none select-none animate-cloud-rtl"
+            style={{ zIndex: 1}}
+          />
+          <img
+            src="/icons/cloud2.svg"
+            alt="Cloud"
+            className="absolute top-2/3 left-1/3 w-28 md:w-40 opacity-15 pointer-events-none select-none animate-cloud-fast-rtl"
+            style={{ zIndex: 1}}
+          />
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-1/4 right-1/4 w-32 md:w-44 opacity-5 pointer-events-none select-none animate-cloud-vfast-rtl"
+            style={{ zIndex: 1}}
+          />
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-16 right-0 w-44 md:w-64 opacity-5 pointer-events-none select-none animate-cloud-slow-rtl"
+            style={{ zIndex: 1 }}
+          />
+          <img
+            src="/icons/cloud1.svg"
+            alt="Cloud"
+            className="absolute top-1/3 right-1/2 w-44 md:w-64 opacity-15 pointer-events-none select-none animate-cloud-fast-rtl"
+            style={{ zIndex: 1}}
+          />
+          <img
+            src="/icons/cloud2.svg"
+            alt="Cloud"
+            className="absolute top-3/4 right-1/4 w-36 md:w-48 opacity-10 pointer-events-none select-none animate-cloud-medium-rtl"
+            style={{ zIndex: 1}}
+          />
+
           {/* Trees - random placement, 3 left, 2 center, 4 right, now larger */}
           {/* Left side trees */}
           <img src="/icons/tree.svg" alt="Tree" className="absolute left-40 bottom-0 w-16 md:w-24 pointer-events-none select-none" style={{ zIndex: 2 }} />
@@ -35,6 +130,14 @@ const Hero = ({ title, description, buttonText, buttonLink, decorative = false }
           <img src="/icons/tree.svg" alt="Tree" className="absolute right-40 bottom-0 w-16 md:w-24 pointer-events-none select-none" style={{ zIndex: 2 }} />
           <img src="/icons/tree.svg" alt="Tree" className="absolute right-0 md:right-14 bottom-0 w-12 md:w-20 pointer-events-none select-none" style={{ zIndex: 2 }} />
           <img src="/icons/tree.svg" alt="Tree" className="absolute right-10 md:right-32 bottom-0 w-10 md:w-16 pointer-events-none select-none" style={{ zIndex: 2 }} />
+
+          {/* Slug */}
+          <img
+            src="/icons/slug.svg"
+            alt="Slug"
+            className="absolute left-1/2 bottom-0 w-40 md:w-64 pointer-events-none select-none -translate-x-1/2"
+            style={{ zIndex: 4 }}
+          />
         </>
       )}
       {/* Main content */}
