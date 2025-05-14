@@ -27,43 +27,43 @@ const Hero = ({ title, description, buttonText, buttonLink, decorative = false }
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-24 left-0 w-44 md:w-64 opacity-10 pointer-events-none select-none animate-cloud-xslow"
+            className="absolute top-12 left-0 w-44 md:w-64 opacity-10 pointer-events-none select-none animate-cloud-xslow"
             style={{ zIndex: 1}}
           />
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-10 left-1/3 w-52 md:w-72 opacity-5 pointer-events-none select-none animate-cloud-medium"
+            className="absolute top-20 left-1/4 w-52 md:w-72 opacity-5 pointer-events-none select-none animate-cloud-medium"
             style={{ zIndex: 1}}
           />
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-1/2 left-1/4 w-40 md:w-56 opacity-5 pointer-events-none select-none animate-cloud-slow"
+            className="absolute top-3/5 left-1/6 w-40 md:w-56 opacity-5 pointer-events-none select-none animate-cloud-slow"
             style={{ zIndex: 1 }}
           />
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-1/3 left-2/3 w-44 md:w-64 opacity-10 pointer-events-none select-none animate-cloud-fast"
+            className="absolute top-2/5 left-3/4 w-44 md:w-64 opacity-10 pointer-events-none select-none animate-cloud-fast"
             style={{ zIndex: 1}}
           />
           <img
             src="/icons/cloud2.svg"
             alt="Cloud"
-            className="absolute top-40 left-1/4 w-32 md:w-48 opacity-5 pointer-events-none select-none animate-cloud-slow"
+            className="absolute top-52 left-1/3 w-32 md:w-48 opacity-5 pointer-events-none select-none animate-cloud-slow"
             style={{ zIndex: 1 }}
           />
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-1/2 left-10 w-24 md:w-40 opacity-15 pointer-events-none select-none animate-cloud-fast"
+            className="absolute top-3/4 left-5 w-24 md:w-40 opacity-15 pointer-events-none select-none animate-cloud-fast"
             style={{ zIndex: 1 }}
           />
           <img
             src="/icons/cloud2.svg"
             alt="Cloud"
-            className="absolute top-10 right-0 w-32 md:w-44 opacity-5 pointer-events-none select-none animate-cloud"
+            className="absolute top-6 right-1/8 w-32 md:w-44 opacity-5 pointer-events-none select-none animate-cloud"
             style={{ zIndex: 1}}
           />
 
@@ -71,49 +71,49 @@ const Hero = ({ title, description, buttonText, buttonLink, decorative = false }
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-2/3 left-1/2 w-36 md:w-56 opacity-15 pointer-events-none select-none animate-cloud-slow-rtl"
+            className="absolute top-4/5 left-1/2 w-36 md:w-56 opacity-15 pointer-events-none select-none animate-cloud-slow-rtl"
             style={{ zIndex: 1 }}
           />
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-1/3 left-1/2 w-36 md:w-52 opacity-5 pointer-events-none select-none animate-cloud-medium-rtl"
+            className="absolute top-1/4 left-3/5 w-36 md:w-52 opacity-5 pointer-events-none select-none animate-cloud-medium-rtl"
             style={{ zIndex: 1}}
           />
           <img
             src="/icons/cloud2.svg"
             alt="Cloud"
-            className="absolute top-2/3 left-1/3 w-28 md:w-40 opacity-5 pointer-events-none select-none animate-cloud-rtl"
+            className="absolute top-3/4 left-2/5 w-28 md:w-40 opacity-5 pointer-events-none select-none animate-cloud-rtl"
             style={{ zIndex: 1}}
           />
           <img
             src="/icons/cloud2.svg"
             alt="Cloud"
-            className="absolute top-2/3 left-1/3 w-28 md:w-40 opacity-15 pointer-events-none select-none animate-cloud-fast-rtl"
+            className="absolute top-1/2 left-1/5 w-28 md:w-40 opacity-15 pointer-events-none select-none animate-cloud-fast-rtl"
             style={{ zIndex: 1}}
           />
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-1/4 right-1/4 w-32 md:w-44 opacity-5 pointer-events-none select-none animate-cloud-vfast-rtl"
+            className="absolute top-1/6 right-1/3 w-32 md:w-44 opacity-5 pointer-events-none select-none animate-cloud-vfast-rtl"
             style={{ zIndex: 1}}
           />
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-16 right-0 w-44 md:w-64 opacity-5 pointer-events-none select-none animate-cloud-slow-rtl"
+            className="absolute top-28 right-5 w-44 md:w-64 opacity-5 pointer-events-none select-none animate-cloud-slow-rtl"
             style={{ zIndex: 1 }}
           />
           <img
             src="/icons/cloud1.svg"
             alt="Cloud"
-            className="absolute top-1/3 right-1/2 w-44 md:w-64 opacity-15 pointer-events-none select-none animate-cloud-fast-rtl"
+            className="absolute top-2/3 right-1/3 w-44 md:w-64 opacity-15 pointer-events-none select-none animate-cloud-fast-rtl"
             style={{ zIndex: 1}}
           />
           <img
             src="/icons/cloud2.svg"
             alt="Cloud"
-            className="absolute top-3/4 right-1/4 w-36 md:w-48 opacity-10 pointer-events-none select-none animate-cloud-medium-rtl"
+            className="absolute top-5/6 right-1/5 w-36 md:w-48 opacity-10 pointer-events-none select-none animate-cloud-medium-rtl"
             style={{ zIndex: 1}}
           />
 
