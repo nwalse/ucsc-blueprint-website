@@ -228,6 +228,23 @@
   }
 }
 
+@keyframes slug-ltr {
+  0% {
+    transform: translateX(-10vw) translateY(8px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(110vw) translateY(8px);
+    opacity: 0;
+  }
+}
+
 /* Animation classes with speed variations */
 .animate-cloud-xslow {
   animation: cloud-slide-5 120s linear infinite;
@@ -262,4 +279,12 @@
 }
 .animate-cloud-vfast-rtl {
   animation: cloud-slide-rtl-15 55s linear infinite;
+}
+
+.animate-slug-rtl {
+  animation: slug-ltr 100s linear infinite;
+}
+
+.animate-slug-rtl-fast {
+  animation: slug-ltr 70s linear infinite;
 }

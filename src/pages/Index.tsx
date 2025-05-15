@@ -10,8 +10,6 @@ const Index = () => {
       <Hero 
         title="Tech for Social Good"
         description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-        buttonText="View All Projects"
-        buttonLink="/projects"
         decorative
       />
       

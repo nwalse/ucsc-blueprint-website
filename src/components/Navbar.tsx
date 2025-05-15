@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +13,10 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <nav className={`fixed top-0 w-full z-50 py-4 px-6 md:px-16 transition-all duration-300  ${isScrolled ? 'bg-blueprint-blue/100' : 'bg-blueprint-blue/30'}`}>
@@ -38,12 +43,45 @@ const Navbar = () => {
           </Link>
         </div>
         
-        <button className="md:hidden text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+        <button 
+          className="md:hidden text-white"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+        >
+          {isMobileMenuOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
         </button>
       </div>
+
+      {/* Mobile menu dropdown */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-blueprint-blue border-t border-white/10 mt-4 w-full left-0">
+          <div className="flex flex-col py-3 max-w-7xl mx-auto">
+            <Link to="/projects" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+              Projects
+            </Link>
+            <Link to="/students" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+              For Students
+            </Link>
+            <Link to="/nonprofits" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+              For Nonprofits
+            </Link>
+            <Link to="/team" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+              Team
+            </Link>
+            <Link to="/contact" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+              Contact
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
