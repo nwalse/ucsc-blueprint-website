@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
 import FAQ from '../components/FAQ';
+import ApplicationCard from '@/components/Applications';
 
 const Students = () => {
   const faqItems = [
@@ -42,51 +43,57 @@ const Students = () => {
       
       <section className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <div>
-              <h2 className="text-3xl font-bold mb-8 font-raleway">Developers</h2>
-              <div className="flex justify-center mb-8">
-                <div className="grid grid-cols-3 gap-4">
-                  <img src="https://via.placeholder.com/80?text=VSCode" alt="VSCode" className="h-20 w-20" />
-                  <img src="https://via.placeholder.com/80?text=React" alt="React" className="h-20 w-20" />
-                  <img src="https://via.placeholder.com/80?text=Node" alt="Node" className="h-20 w-20" />
-                </div>
-              </div>
-              <p className="mb-6 font-karla">
-                Work in an agile team specializing in Front-End or Back-End and develop an application from design to deployment.
-              </p>
-              <div className="flex justify-center">
-                <button className="border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300">
-                  Apply Here
-                </button>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+            <ApplicationCard
+              images={[
+                { src: "/icons/vscode.svg", alt: "VSCode" },
+                { src: "/icons/react.svg", alt: "React" },
+                { src: "/icons/firebase.svg", alt: "Node" },
+              ]}
+              title="Developers"
+              description="Work in an agile team specializing in Front-End or Back-End and develop an application from design to deployment."
+              buttonLink="https://yfiob.org/"
+              buttonStatus="inactive"
+            />
             
-            <div>
-              <h2 className="text-3xl font-bold mb-8 font-raleway">Designers</h2>
-              <div className="flex justify-center mb-8">
-                <div className="grid grid-cols-3 gap-4">
-                  <img src="https://via.placeholder.com/80?text=Adobe" alt="Adobe" className="h-20 w-20" />
-                  <img src="https://via.placeholder.com/80?text=Figma" alt="Figma" className="h-20 w-20" />
-                  <img src="https://via.placeholder.com/80?text=UI" alt="UI" className="h-20 w-20" />
-                </div>
-              </div>
-              <p className="mb-6 font-karla">
-                Work on the entire UX process in a team of designers including user research, prototyping, and case studies.
-              </p>
-              <div className="flex justify-center">
-                <button className="bg-gray-200 text-gray-600 font-medium py-2 px-6 cursor-not-allowed">
-                  Applications Are Closed
-                </button>
-              </div>
-            </div>
+            <ApplicationCard
+              images={[
+                { src: "/icons/adobe.svg", alt: "Adobe" },
+                { src: "/icons/figma.svg", alt: "Figma" },
+                { src: "/icons/forms.svg", alt: "Forms" },
+              ]}
+              title="Designers"
+              description="Work in an agile team specializing in Front-End or Back-End and develop an application from design to deployment."
+              buttonLink="https://yfiob.org/"
+              buttonStatus="inactive"
+            />
+
+            <ApplicationCard
+              images={[
+                { src: "/icons/slack.svg", alt: "Slack" },
+                { src: "/icons/leadership.svg", alt: "Leadership" },
+                { src: "/icons/notion.svg", alt: "Notion" },
+              ]}
+              title="Leadership"
+              description="Work in an agile team specializing in Front-End or Back-End and develop an application from design to deployment."
+              buttonLink="https://yfiob.org/"
+              buttonStatus="inactive"
+            />
+
           </div>
         </div>
       </section>
       
       <section className="py-16 md:py-24 bg-gray-50 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-20 items-center">
+            <div className="flex justify-center">
+              <div className="flex space-x-10">
+                <img src="/blueprint/bpsmall.svg" alt="Blueprint Logo" className="h-20 w-20" />
+                <img src="icons/userCloud.svg" alt="Team Logo" className="h-20 w-20" />
+                <img src="icons/github.svg" alt="GitHub Logo" className="h-20 w-20" />
+              </div>
+            </div>
             <div className="col-span-1 md:col-span-2">
               <h2 className="text-3xl font-bold mb-6 font-raleway">Open Source Projects</h2>
               <p className="mb-6 font-karla">
@@ -98,14 +105,6 @@ const Students = () => {
               >
                 View our GitHub
               </a>
-            </div>
-            
-            <div className="flex justify-center">
-              <div className="flex space-x-4">
-                <img src="https://via.placeholder.com/80?text=BP" alt="Blueprint Logo" className="h-20 w-20" />
-                <img src="https://via.placeholder.com/80?text=Team" alt="Team Logo" className="h-20 w-20" />
-                <img src="https://via.placeholder.com/80?text=GitHub" alt="GitHub Logo" className="h-20 w-20" />
-              </div>
             </div>
           </div>
         </div>
@@ -171,11 +170,11 @@ const Students = () => {
         </div>
       </section>
       
-      <section className="py-16 md:py-24 bg-gray-50 px-6">
+      <section className="py-16 md:py-24  px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center font-raleway">Frequently Asked Questions</h2>
           
-          <div className="bg-white rounded-lg shadow-md p-8">
+          <div className="rounded-lg p-8 bg-gray-50">
             <FAQ items={faqItems} />
           </div>
         </div>
