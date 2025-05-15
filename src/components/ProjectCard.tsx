@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, imageSrc, link }: ProjectCardProps) =
       <p className="mb-4 font-karla text-gray-700">{description}</p>
       <Link 
         to={link} 
-        className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-1 px-4 transition-colors duration-300 text-sm mt-auto"
+        className="self-start inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
       >
         Read More
       </Link>

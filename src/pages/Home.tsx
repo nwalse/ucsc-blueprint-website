@@ -3,14 +3,18 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import ProjectCard from '../components/ProjectCard';
+import Carousel from '../components/Carousel';
 
-const Index = () => {
+const svgs = import.meta.glob('../assets/partners/*.svg', { eager: true, query: '?url', import: 'default'});
+
+const Home = () => {
   return (
     <div>
       <Hero 
         title="Tech for Social Good"
         description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
         decorative
+        buttonText="Learn More"
       />
       
       <section className="py-16 md:py-24 px-6">
@@ -33,7 +37,7 @@ const Index = () => {
             
             <div className="md:w-1/2">
               <img 
-                src="../photos/team.png" 
+                src="src/assets/photos/team.png" 
                 alt="Blueprint Team" 
                 className="w-full h-auto"
               />
@@ -148,9 +152,9 @@ const Index = () => {
               title="Software Tools" 
               description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
               icons={[
-                <img key="mobile1" src="/icons/tools.svg" alt="Mobile Icon 1" className="h-12 w-12" />,
+                <img key="mobile1" src="/icons/download.svg" alt="Mobile Icon 1" className="h-12 w-12" />,
                 <img key="mobile2" src="/icons/webPage.svg" alt="Mobile Icon 2" className="h-12 w-12" />,
-                <img key="mobile3" src="/icons/download.svg" alt="Mobile Icon 3" className="h-12 w-12" />,
+                <img key="mobile3" src="/icons/tools.svg" alt="Mobile Icon 3" className="h-12 w-12" />,
               ]}
             />
           </div>
@@ -158,56 +162,50 @@ const Index = () => {
 
       </section>
       
-      <section className="py-16 md:py-24 bg-gray-50 px-6">
+      <section className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="flex justify-between items-center mb-12">
+          <div className="flex flex-row justify-between items-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-raleway">Our Projects</h2>
             <Link 
               to="/projects" 
-              className="bg-blueprint-blue text-white px-4 py-2 rounded hidden md:block hover:bg-blue-800 transition-colors duration-300"
+              className="flex inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
             >
               View All Projects
             </Link>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-4xl mx-auto px-6">
+            <Carousel itemsPerPage={2}>
+
             <ProjectCard 
               title="Sea Otter Savvy" 
               description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="https://via.placeholder.com/400x300?text=Sea+Otter+Savvy"
+              imageSrc="../projects/sos.png"
               link="/projects/sea-otter-savvy"
             />
             
             <ProjectCard 
               title="Native Animal Rescue" 
               description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="https://via.placeholder.com/400x300?text=Native+Animal+Rescue"
+              imageSrc="../projects/nar.png"
               link="/projects/native-animal-rescue"
             />
             
             <ProjectCard 
               title="Santa Cruz Mountain Art Center" 
               description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="https://via.placeholder.com/400x300?text=Santa+Cruz+Mountain+Art"
+              imageSrc="../projects/scmac.png"
               link="/projects/santa-cruz-mountain-art-center"
             />
-          </div>
-          
-          <div className="mt-12 flex justify-center md:hidden">
-            <Link 
-              to="/projects" 
-              className="bg-blueprint-blue text-white px-4 py-2 rounded hover:bg-blue-800 transition-colors duration-300"
-            >
-              View All Projects
-            </Link>
+            </Carousel>
           </div>
         </div>
       </section>
       
-      <section className="py-16 md:py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center">
+      <section className="py-16 md:py-24 px-6 bg-gray-50">
+        <div className="max-w-5xl mx-auto text-left">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 font-raleway">Collaboration</h2>
-          <p className="text-lg max-w-2xl mx-auto mb-12 font-karla">
+          <p className="text-lg max-w-4xl mb-12 font-karla">
             Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare. Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare.
           </p>
           <Link 
@@ -218,8 +216,30 @@ const Index = () => {
           </Link>
         </div>
       </section>
+
+      <section className="py-16 md:py-24 px-6 ">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-raleway">Our Partners</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-items-center">
+            {Object.values(svgs).map((src, idx) => (
+              <img
+                key={idx}
+                src={src as string}
+                alt={`Partner ${idx + 1}`}
+                className="h-16 w-auto object-contain transition-transform duration-200 hover:scale-105"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="flex justify-center py-8">
+        <a href="#top" className="inline-block border border-gray-300 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">
+          Back to top
+        </a>
+      </div>
     </div>
   );
 };
 
-export default Index;
+export default Home;

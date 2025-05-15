@@ -39,7 +39,7 @@ const Navbar = () => {
             Team
           </Link>
           <Link to="/contact" className="border border-white text-white hover:bg-white hover:text-blueprint-blue px-3 py-1 font-medium transition-colors duration-300">
-            Contact
+            Contact Us
           </Link>
         </div>
         
