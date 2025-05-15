@@ -230,18 +230,10 @@
 
 @keyframes slug-ltr {
   0% {
-    transform: translateX(-10vw) translateY(8px);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
+    transform: translateX(-8vw) translateY(8px);
   }
   100% {
     transform: translateX(110vw) translateY(8px);
-    opacity: 0;
   }
 }
 
@@ -281,10 +273,13 @@
   animation: cloud-slide-rtl-15 55s linear infinite;
 }
 
-.animate-slug-rtl {
-  animation: slug-ltr 100s linear infinite;
+.animate-slug-ltr {
+  animation: slug-ltr 1000s linear infinite;
 }
 
-.animate-slug-rtl-fast {
-  animation: slug-ltr 70s linear infinite;
+.animate-slug-ltr-fast {
+  animation: slug-ltr 300s linear infinite;
+}
+.animate-slug-ltr-fastest {
+  animation: slug-ltr 60s linear infinite;
 }

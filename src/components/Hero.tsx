@@ -9,7 +9,7 @@ interface HeroProps {
   decorative?: boolean;
 }
 
-const Hero = ({ title, description, decorative = false }: HeroProps) => {
+const Hero = ({ title, description,  decorative = false }: HeroProps) => {
   return (
     <section className={`blueprint-grid-bg py-16 md:py-24 px-6 md:px-16 relative overflow-hidden`}>
       {/* Decorative SVGs only if decorative is true */}
@@ -135,19 +135,19 @@ const Hero = ({ title, description, decorative = false }: HeroProps) => {
           <img
             src="/icons/slug.svg"
             alt="Slug"
-            className="absolute left-1 bottom-0 w-20 md:w-34 pointer-events-none select-none -translate-x-1/2 animate-slug-rtl"
+            className="absolute left-1 bottom-0 w-20 md:w-34 pointer-events-none select-none -translate-x-1/2 animate-slug-ltr-fastest"
             style={{ zIndex: 6 }}
           />
           <img
             src="/icons/slug.svg"
             alt="Slug"
-            className="absolute left-1/4 bottom-0 w-20 md:w-34 pointer-events-none select-none -translate-x-1/2 animate-slug-rtl-fast"
+            className="absolute left-1 bottom-0 w-20 md:w-34 pointer-events-none select-none -translate-x-1/2 animate-slug-ltr-fast"
             style={{ zIndex: 6 }}
           />
           <img
             src="/icons/slug.svg"
             alt="Slug"
-            className="absolute right-1/4 bottom-0 w-20 md:w-34 pointer-events-none select-none -translate-x-1/2 animate-slug-rtl"
+            className="absolute left-1 bottom-0 w-20 md:w-34 pointer-events-none select-none -translate-x-1/2 animate-slug-ltr"
             style={{ zIndex: 6 }}
           />
         </>
