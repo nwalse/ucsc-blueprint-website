@@ -14,7 +14,7 @@ interface StepsProcessProps {
 
 const StepsProcess: React.FC<StepsProcessProps> = ({ steps, activeStep, onStepChange }) => {
   return (
-    <section className="py-16 md:py-24 px-6">
+    <section className="py-16 md:py-12 px-6">
       <div className="max-w-2xl mx-auto">
         {/* Timeline container */}
         <div className="grid grid-cols-3 md:flex md:flex-row justify-center items-center mb-16 gap-3">
@@ -23,7 +23,7 @@ const StepsProcess: React.FC<StepsProcessProps> = ({ steps, activeStep, onStepCh
               {/* Step indicator */}
               <div
                 className={`p-4 rounded-full flex flex-col items-center justify-center gap-2 ${
-                    activeStep === index ? "bg-blueprint-blue text-white" : "border border-gray-300 text-gray-500"
+                    activeStep === index ? "bg-blueprint-light-blue" : "border border-gray-300 text-gray-500"
                 }`}
                 onClick={() => onStepChange(index)}
                 style={{ cursor: "pointer" }}
@@ -36,7 +36,7 @@ const StepsProcess: React.FC<StepsProcessProps> = ({ steps, activeStep, onStepCh
               {index < steps.length - 1 && (
                 <div
                   className={`hidden md:block w-12 h-1 ${
-                    activeStep >= index ? "bg-blueprint-blue" : "bg-gray-300"
+                    activeStep >= index ? "bg-blueprint-light-blue" : "bg-gray-100"
                   }`}
                   style={{ marginRight: '-12px' }}
                 ></div>
@@ -48,7 +48,7 @@ const StepsProcess: React.FC<StepsProcessProps> = ({ steps, activeStep, onStepCh
         {/* Step details */}
         <div className="bg-white rounded-lg shadow-md p-8">
           <div className="flex justify-center mb-6">
-            <div className="p-4 bg-gray-100 rounded-full">
+            <div className="p-4 bg-blueprint-light-blue rounded-full">
               <img
                 src={steps[activeStep].icon}
                 alt={`Active Step ${activeStep + 1}`}

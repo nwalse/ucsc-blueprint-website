@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
 import FAQ from '../components/FAQ';
-import ApplicationCard from '@/components/Applications';
+import ApplicationCard from '@/components/ApplicationCard';
 import StepsProcess from '@/components/StepsCarousel';
 
 const Students = () => {
@@ -157,7 +157,7 @@ const Students = () => {
         </div>
       </section>
       
-      <section className="py-16 md:py-24  px-6">
+      <section className="py-16 md:py-12  px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center font-raleway">Frequently Asked Questions</h2>
           
