@@ -165,7 +165,7 @@ const Nonprofits = () => {
       </section>
       
       <section className="py-16 md:py-12  px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center font-raleway">Frequently Asked Questions</h2>
           
           <div className="rounded-lg p-8 bg-gray-50">

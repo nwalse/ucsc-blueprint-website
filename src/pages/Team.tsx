@@ -39,25 +39,7 @@ const Team = () => {
       />
       
       <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-12 mb-16">
-            <div className="md:w-1/3">
-              <img src="https://via.placeholder.com/400x300?text=Blueprint+Logo" alt="Blueprint Logo" className="w-full" />
-            </div>
-            
-            <div className="md:w-2/3">
-              <h2 className="text-3xl font-bold mb-6 font-raleway">Collaboration</h2>
-              <p className="mb-6 font-karla">
-                Each year Blueprint works with nonprofits, designers, and developers to build software products that enhance initiatives at no cost. If you're a non-profit and would like to collaborate with us:
-              </p>
-              <Link 
-                to="/contact" 
-                className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-8 transition-colors duration-300"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto">
           
           <div id="leadership" className="mb-16">
             <h2 className="text-3xl font-bold mb-12 text-center font-raleway">Leadership</h2>
