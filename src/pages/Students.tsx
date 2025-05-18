@@ -70,12 +70,14 @@ const Students = () => {
 
   return (
     <div>
+      <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Students"
         description="Every year, our teams of student developers and designers work with nonprofits to deliver an application that best suits their needs."
         buttonText="See Opportunities at Blueprint"
-        buttonLink="/students#opportunities"
+        buttonLink=""
       />
+      </div>
       
       <section className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
@@ -129,7 +131,7 @@ const Students = () => {
                 Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare.
               </p>
               <a
-                href="https://github.com"
+                href="https://github.com/ucsc-blueprint"
                 className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
               >
                 View our GitHub

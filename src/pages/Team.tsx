@@ -1,11 +1,12 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import { leadership, designers, developers } from '@/lib/teamData';
+import { leadership, designers, developers, alumni } from '@/lib/teamData';
+import Carousel from '@/components/Carousel';
 
 interface TeamMemberProps {
   name: string;
   role: string;
-  category: 'designers' | 'developers' | 'leadership';
+  category: 'designers' | 'developers' | 'leadership' | 'alumni';
 }
 
 const TeamMember = ({ name, role, category }: TeamMemberProps) => {
@@ -19,9 +20,12 @@ const TeamMember = ({ name, role, category }: TeamMemberProps) => {
           src={imagePath} 
           alt={displayName} 
           className="w-full h-full object-cover" 
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "src/assets/photos/members/headshotDefault.svg";
+          }}
         />
       </div>
-      <h3 className="text-lg font-bold font-raleway">{displayName}</h3>
+      <h3 className="text-lg font-bold font-raleway text-center">{displayName}</h3>
       <p className="text-sm text-gray-600 mb-2 font-karla">{role}</p>
     </div>
   );
@@ -30,12 +34,14 @@ const TeamMember = ({ name, role, category }: TeamMemberProps) => {
 const Team = () => {
   return (
     <div>
+      <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Our Team"
         description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
         buttonText="Meet our Team"
-        buttonLink="#leadership"
+        buttonLink=""
       />
+      </div>
       
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
@@ -83,12 +89,25 @@ const Team = () => {
           </div>
         </div>
       </section>
-      
-      <div className="flex justify-center py-8">
-        <a href="#top" className="inline-block border border-gray-300 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">
-          Back to top
-        </a>
+
+      <section className="mb-24">
+      <h2 className="text-3xl font-bold mb-12 text-center font-raleway">Alumni</h2>
+      <div className="max-w-5xl mx-auto px-6 align-center flex justify-center"> 
+      <Carousel itemsPerPage={2}>
+        {alumni.map((member, index) => (
+          <div key={index} className="mx-16 flex justify-center">
+          <TeamMember 
+            key={index}
+            name={member.name}
+            role={member.role}
+            category="alumni"
+          />
+          </div>
+        ))}
+      </Carousel>
       </div>
+      </section>
+      
     </div>
   );
 };

@@ -52,3 +52,26 @@ export const developers: TeamMember[] = [
   { name: "Nhi-Le" },
   { name: "Sanjana-Manikandan" },
 ];
+
+export const alumni: TeamMember[] = [
+  { name: "Akshay-Kamath" },
+  { name: "Alisha-Manocha" },
+  { name: "Andrew-Weckwerth" },
+  { name: "Anirudh-Krishna" },
+  { name: "Anurag-Chillarige" },
+  { name: "Arveen-Azhand" },
+  { name: "Aviel-Hernandez" },
+  { name: "Avni-Ghandi" },
+  { name: "Brenda-Aceves" },
+  { name: "Daniel-Gonzalez" },
+  { name: "Emil-Wilson" },
+  { name: "Gandharva-Naveen" },
+  { name: "Haaris-Wasti" },
+  { name: "Lee-Way-Wang" },
+  { name: "Malco-Salcedo" },
+  { name: "Michelle-Wan" },
+  { name: "Mukhul-Manicka" },
+  { name: "Nathan-Dong" },
+  { name: "Nhi-Le" },
+  { name: "Sanjana-Manikandan" },
+];

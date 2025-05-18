@@ -15,6 +15,7 @@ const Home = () => {
         description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
         decorative
         buttonText="Learn More"
+        buttonLink='/nonprofits'
       />
       
       <section className="py-16 md:py-24 px-6">
@@ -29,6 +30,7 @@ const Home = () => {
               
               <Link 
                 to="/team" 
+                onClick={() => window.scrollTo(0, 0)}
                 className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
               >
                 Meet Our Team
@@ -76,7 +78,8 @@ const Home = () => {
             <div>
               <Link 
                 to="/students" 
-                className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
+                onClick={() => window.scrollTo(0, 0)}
+                className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300 "
               >
                 View Opportunities
               </Link>
@@ -109,6 +112,7 @@ const Home = () => {
             <div>
               <Link 
                 to="/nonprofits" 
+                onClick={() => window.scrollTo(0, 0)}
                 className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
               >
                 Collaborate With Us
@@ -168,6 +172,7 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold font-raleway">Our Projects</h2>
             <Link 
               to="/projects" 
+              onClick={() => window.scrollTo(0, 0)}
               className="flex inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
             >
               View All Projects
@@ -210,6 +215,7 @@ const Home = () => {
           </p>
           <Link 
             to="/contact" 
+            onClick={() => window.scrollTo(0, 0)}
             className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-8 transition-colors duration-300"
           >
             Contact Us

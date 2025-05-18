@@ -6,12 +6,14 @@ import ServiceCard from '../components/ServiceCard';
 const Projects = () => {
   return (
     <div>
+      <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Our Projects"
         description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
         buttonText="View All Projects"
         buttonLink="/projects"
       />
+      </div>
       
       <section className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
@@ -85,6 +87,7 @@ const Projects = () => {
               <div className="flex justify-left">
                 <a 
                   href="/students" 
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
                 >
                   View Opportunities
@@ -97,7 +100,8 @@ const Projects = () => {
               <p className="text-left mb-6 font-karla">Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare.</p>
               <div className="flex justify-left">
                 <a 
-                  href="/nonprofits" 
+                  href="/nonprofits"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
                 >
                   Collaborate With Us
