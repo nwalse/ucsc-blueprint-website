@@ -30,6 +30,7 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				'blueprint-blue': '#071D49',
 				'blueprint-light-blue': '#DEEBFF',
+				'blueprint-original-blue': '#0A7CE8',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

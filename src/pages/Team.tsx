@@ -15,7 +15,7 @@ const TeamMember = ({ name, role, category }: TeamMemberProps) => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="mb-4 rounded-full overflow-hidden w-32 h-32 border-2 border-blueprint-blue">
+      <div className="mb-4 rounded-full overflow-hidden w-32 h-32 border-4 border-blueprint-original-blue">
         <img 
           src={imagePath} 
           alt={displayName} 
