@@ -53,5 +53,10 @@ export const developers: TeamMember[] = [
 ];
 
 export const alumni: TeamMember[] = [
+  { name: "Jose-Chavez" },
   { name: "Irene-Wong" },
+  { name: "Alisha-Saboowala" },
+  { name: "Arushi-Pandey" },
+  { name: "Brent-Chen" },
+  { name: "Juhi-Malik" },
 ];
