@@ -19,7 +19,7 @@ export const leadership: TeamMember[] = [
 ];
 
 export const designers: TeamMember[] = [
-  { name: "Alexander-Sherbrooke" },
+  { name: "Alexander-Sherbrooke", role: "Design Executive" },
   { name: "Ananya-Kunjal" },
   { name: "Anna-Lin" },
   { name: "Ernest-So" },
@@ -59,7 +59,6 @@ export const alumni: TeamMember[] = [
   { name: "Arushi-Pandey", role: "VP of Projects" },
   { name: "Brent-Chen", role: "Project Lead" },
   { name: "Juhi-Malik", role: "VP of Operations" },
-  { name: "Nathan-Dong", role: "Developer" },
   { name: "Par-Dar", role: "Developer" },
   { name: "Aaron-Le", role: "Project Lead" },
   { name: "Akshitha-Nagaraj", role: "Developer" },

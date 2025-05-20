@@ -8,29 +8,17 @@ import StepsProcess from '@/components/StepsCarousel';
 const Nonprofits = () => {
   const faqItems = [
     {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
+      question: "How long do projects typically take?",
+      answer: "Projects typically take 3 quarters or 9 months to complete, depending on the complexity of the project and the availability of resources. We work closely with our partners to ensure that timelines are realistic and achievable.",
     },
     {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
+      question: "Can we request a specific technology stack?",
+      answer: "This depends on the project and the availability of resources. We typically use React and React Native for web and mobile applications, but we are open to discussing other technology stacks if they are easily accessible to our students, however we do not have the resources to support other technology stacks.",
     },
     {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
+      question: "Can we create product for profit?",
+      answer: "No, Blueprint is a nonprofit organization and we do not create products for profit. Our mission is to provide free software development services to nonprofits and organizations that are making a positive impact in their communities.",
     },
-    {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
-    },
-    {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
-    },
-    {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
-    }
   ];
 
   const [activeStep, setActiveStep] = useState(0);

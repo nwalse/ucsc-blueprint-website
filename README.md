@@ -2,6 +2,8 @@
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
+Contact form responses: https://docs.google.com/forms/d/1Onit1CfnQra5AzeKWE_FrldZSCE9guYnBtelkyYEinQ/edit
+
 Follow these steps:
 
 ```sh

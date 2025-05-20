@@ -8,29 +8,21 @@ import StepsProcess from '@/components/StepsCarousel';
 const Students = () => {
   const faqItems = [
     {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
+      question: "I'm curious about how much web dev experience is required to join Blueprint as a developer?",
+      answer: "Since the tech stack we work with is react and react native, having experience with that is amazing but not required. They's no required level of experience that you need to apply to Blueprint, and that's not the only thing we're looking for in our developers either We also take into account your responses to other question on the application and how well your ideals fit with our mission"
     },
     {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
+      question: "How much experience is needed to join Blueprint as a Project Lead?",
+      answer: "For PLs we require them to be experienced with React or React Native since they'll be leading a project team using that tech stack. It is also a plus if you have some leadership experience, but it's not required.",
     },
     {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
+      question: "How much experience is needed to join Blueprint as a Designer?",
+      answer: "For designers having skills in one of these areas Graphic Design, UI design, UX Research, Product/Business is good and for tools Figma experience is required. Figma and some sort of UI skills are the most important. I would recommend creating prototypes with figma if you haven’t used it yet!",
     },
     {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
+      question: "Are there clubwide meetings for students?",
+      answer: "Unfortunately our club doesn't hold club wide meetings. However, there may be some in the fall quarter to introduce our club to new members.",
     },
-    {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
-    },
-    {
-      question: "Applications Open?",
-      answer: "Yes, applications are currently open until October 15th."
-    }
   ];
 
   const [activeStep, setActiveStep] = useState(0);
