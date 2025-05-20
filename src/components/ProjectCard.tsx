@@ -6,10 +6,11 @@ interface ProjectCardProps {
   title: string;
   description: string;
   imageSrc: string;
-  link: string;
+  mediumLink?: string;
+  demoLink?: string;
 }
 
-const ProjectCard = ({ title, description, imageSrc, link }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, imageSrc, mediumLink, demoLink }: ProjectCardProps) => {
   return (
     <div className="flex flex-col">
       <div className="mb-4 overflow-hidden rounded-md">
@@ -17,12 +18,24 @@ const ProjectCard = ({ title, description, imageSrc, link }: ProjectCardProps) =
       </div>
       <h3 className="text-xl font-bold mb-2 font-raleway">{title}</h3>
       <p className="mb-4 font-karla text-gray-700">{description}</p>
+      <div className="flex gap-4">
+      {mediumLink && (
       <Link 
-        to={link} 
+        to={mediumLink} 
         className="self-start inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
       >
         Read More
       </Link>
+      )}
+      {demoLink && (
+      <Link 
+        to={demoLink} 
+        className="self-start inline-block border-2 border-blueprint-blue text-blueprint-blue hover:bg-blueprint-blue hover:text-white font-medium py-2 px-6 transition-colors duration-300"
+      >
+        Demo
+      </Link>
+      )}
+      </div>
     </div>
   );
 };
