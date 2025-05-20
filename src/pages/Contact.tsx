@@ -54,7 +54,7 @@ const Contact = () => {
           </div>
           
           <div className="md:w-2/3 flex items-center justify-center">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeay3WXXmpxxSDXItxyFi0UBcBgvHaaNS2GiOCDQNg_BRhl5w/viewform?embedded=true" width="640" height="771">Loading…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeay3WXXmpxxSDXItxyFi0UBcBgvHaaNS2GiOCDQNg_BRhl5w/viewform?embedded=true" width="640" height="1071">Loading…</iframe>
           </div>
         </div>
       </section>
