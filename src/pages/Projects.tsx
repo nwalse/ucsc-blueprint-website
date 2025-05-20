@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
 import ServiceCard from '../components/ServiceCard';
+import { projects } from '../lib/projectData';
 
 const Projects = () => {
   return (
@@ -9,7 +10,7 @@ const Projects = () => {
       <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Our Projects"
-        description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
+        description="Each year Blueprint works with three or more local nonprofits to create technology solutions that help them better serve their communities."
         buttonText="View All Projects"
         buttonLink="/projects"
       />
@@ -20,61 +21,35 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-raleway">2024 - 2025</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <ProjectCard 
-              title="Sea Otter Savvy" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="projects/sos.png"
-              link="/projects/sea-otter-savvy"
-            />
-            
-            <ProjectCard 
-              title="Sea Otter Savvy" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="projects/sos.png"
-              link="/projects/sea-otter-savvy"
-            />
-            
-            <ProjectCard 
-              title="Sea Otter Savvy and Native Animal Rescue" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="projects/sos.png"
-              link="/projects/sea-otter-savvy"
-            />
+
+            {projects.filter((project) => project.year.includes(2024) && project.year.includes(2025)).map((project, index) => (
+              <ProjectCard 
+                key={index}
+                title={project.title}
+                description={project.description}
+                imageSrc={project.imageSrc}
+                mediumLink={project.mediumLink}
+                demoLink={project.demoLink}
+              />
+            ))}
+
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-raleway">2023 - 2024</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <ProjectCard 
-              title="Native Animal Rescue" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="projects/nar.png"
-              link="/projects/native-animal-rescue"
-            />
-            
-            <ProjectCard 
-              title="Santa Cruz Mountain Art Center" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="projects/scmac.png"
-              link="/projects/santa-cruz-mountain-art-center"
-            />
-            
-            <ProjectCard 
-              title="Sea Otter Savvy" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="projects/sos.png"
-              link="/projects/sea-otter-savvy"
-            />
+            {projects.filter((project) => project.year.includes(2023) && project.year.includes(2024)).map((project, index) => (
+              <ProjectCard 
+                key={index}
+                title={project.title}
+                description={project.description}
+                imageSrc={project.imageSrc}
+                mediumLink={project.mediumLink}
+                demoLink={project.demoLink}
+              />
+            ))}
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ProjectCard 
-              title="Your Future is Our Business" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
-              imageSrc="projects/yfiob.png"
-              link="/projects/yfob"
-            />
-          </div>
+
         </div>
       </section>
       

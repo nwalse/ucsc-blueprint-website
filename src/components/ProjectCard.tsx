@@ -16,8 +16,8 @@ const ProjectCard = ({ title, description, imageSrc, mediumLink, demoLink }: Pro
       <div className="mb-4 overflow-hidden rounded-md">
         <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
       </div>
-      <h3 className="text-xl font-bold mb-2 font-raleway">{title}</h3>
-      <p className="mb-4 font-karla text-gray-700">{description}</p>
+      <h3 className="text-xl font-bold mb-2 font-raleway max-w-lg">{title}</h3>
+      <p className="mb-4 font-karla text-gray-700 max-w-lg mx-auto">{description}</p>
       <div className="flex gap-4">
       {mediumLink && (
       <Link 
