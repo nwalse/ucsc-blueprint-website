@@ -155,6 +155,8 @@ const Hero = ({ title, description,  decorative = false, buttonText, buttonLink,
       )}
       {/* Main content */}
       <div className="max-w-3xl mx-auto relative z-10">
+        <div className='flex flex-col md:flex-row items-start justify-between gap-10'>
+        <div className='md:w-1/2'>
         <h1 className={`text-4xl md:text-5xl font-bold mb-6 text-white font-raleway max-w-2xl ${decorative ? 'flex flex-col items-start gap-2' : ''}`}>
           {decorative ? (
             <>
@@ -163,7 +165,7 @@ const Hero = ({ title, description,  decorative = false, buttonText, buttonLink,
                 <img
                   src="/blueprint/bpsmall.svg"
                   alt="Blueprint Logo"
-                  className="inline-block align-middle w-10 md:w-14 h-auto"
+                  className="inline-block align-middle w-10 md:w-14 h-auto animate-rotate"
                   style={{ zIndex: 2 }}
                 />
               </div>
@@ -179,11 +181,13 @@ const Hero = ({ title, description,  decorative = false, buttonText, buttonLink,
           <Link to={buttonLink} onClick={() => window.scrollTo(400, 400)} className="border border-white text-white hover:bg-white hover:text-blueprint-blue px-3 py-1 font-medium py-2 px-6 transition-colors duration-300">
             {buttonText}
           </Link>
+        </div>
+        {imageSrc && (
+          <img src={imageSrc} alt="Hero Image" className='hidden sm:block w-full max-w-[400px] max-h-[400px] mt-8 object-fit-cover' />
+        )}
 
       </div>
-      {imageSrc && (
-        <img src={imageSrc} alt="Hero Image" />
-      )}
+      </div>
     </section>
   );
 };
