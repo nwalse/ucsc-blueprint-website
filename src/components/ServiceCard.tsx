@@ -9,7 +9,7 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, icons }: ServiceCardProps) => {
   return (
-    <div className="flex flex-col items-start text-left max-w-sm min-p-8 bg-white">
+    <div className="flex flex-col items-start text-left max-w-sm min-p-8">
       <div className="flex items-center space-x-6 mb-4">
         {icons.map((icon, index) => (
           <span key={index} className="text-blueprint-blue">

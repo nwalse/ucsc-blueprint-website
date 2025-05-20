@@ -73,7 +73,7 @@ const Students = () => {
       <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Students"
-        description="Every year, our teams of student developers and designers work with nonprofits to deliver an application that best suits their needs."
+        description="Every year, our teams of student developers and designers learn how to build software for nonprofits. We are always looking for passionate students who want to make a difference in the world through technology."
         buttonText="See Opportunities at Blueprint"
         buttonLink=""
       />
