@@ -38,32 +38,32 @@ const Students = () => {
     {
       title: "Applications Open",
       description:
-        "Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare.",
+        "Applications open up during Fall Quarter around Cornucopia where we recruit designers and developers. We may also recruit at different times of the year depending on the needs of our team and partners.",
       icon: "icons/calendar.svg",
     },
     {
-      title: "Step 2 Title",
-      description: "Description for step 2.",
+      title: "Submit an Application",
+      description: "We try to keep our application short accepting students of all skill and grade levels! If you're interested in using technology to help others, we encourage you to apply!",
       icon: "icons/send.svg",
     },
     {
-      title: "Step 3 Title",
-      description: "Description for step 3.",
+      title: "Application Review",
+      description: "We strongly look for kind, helpful individuals passionate about technology for good. The most important things that we look for is passion for the mission, willingless to grow, and a team player (e.g. do you enjoy helping others?)",
       icon: "icons/search.svg"
     },
     {
-      title: "Step 3 Title",
-      description: "Description for step 3.",
+      title: "Interviews",
+      description: "If selected, you will have an interview with one of Blueprint's leadership to see if you are the right fit! This includes technical challenges in React for devlopers and design challenges in Figma for designers.",
       icon: "icons/profile.svg"
     },
     {
-      title: "Step 3 Title",
-      description: "Description for step 3.",
+      title: "Decisions",
+      description: "Decisions are made by the leadership team and you will be notified via email. We accept a limited number of students each quarter, so if you are not accepted, we encourage you to apply when applications open again.",
       icon: "icons/mail.svg"
     },
     {
-      title: "Step 4 Title",
-      description: "Description for step 4.",
+      title: "Join the Team",
+      description: "If accepted, you will be invited to our onboarding meetings where you will meet your team and learn more about the projects you'll be working on. The onboarding for developers and designers is different, so make sure to check the schedule.",
       icon: "blueprint/bpsmall.svg"
     },
   ];
@@ -101,7 +101,7 @@ const Students = () => {
                 { src: "/icons/forms.svg", alt: "Forms" },
               ]}
               title="Designers"
-              description="Work in an agile team specializing in Front-End or Back-End and develop an application from design to deployment."
+              description="Work on the entire UX process in a team of designers including user research, prototyping, and case studies."
               buttonLink="https://yfiob.org/"
               buttonStatus="inactive"
             />
@@ -113,7 +113,7 @@ const Students = () => {
                 { src: "/icons/notion.svg", alt: "Notion" },
               ]}
               title="Leadership"
-              description="Work in an agile team specializing in Front-End or Back-End and develop an application from design to deployment."
+              description="Work on product management, agile project management, and team leadership. Improve the Blueprint community."
               buttonLink="https://yfiob.org/"
               buttonStatus="inactive"
             />
@@ -128,7 +128,7 @@ const Students = () => {
             <div className="lg:col-span-1">
               <h2 className="text-3xl font-bold mb-6 font-raleway">Open Source Projects</h2>
               <p className="mb-6 font-karla">
-                Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare.
+                Blueprint builds open-source software for nonprofits. This means that the code we write is available for anyone to use and distribute. We believe in the power of collaboration and transparency, and we want to make sure that our work can benefit as many people as possible.
               </p>
               <a
                 href="https://github.com/ucsc-blueprint"
