@@ -42,7 +42,7 @@ const Students = () => {
       icon: "icons/calendar.svg",
     },
     {
-      title: "Submit an Application",
+      title: "Apply",
       description: "We try to keep our application short accepting students of all skill and grade levels! If you're interested in using technology to help others, we encourage you to apply!",
       icon: "icons/send.svg",
     },
@@ -90,7 +90,7 @@ const Students = () => {
               ]}
               title="Developers"
               description="Work in an agile team specializing in Front-End or Back-End and develop an application from design to deployment."
-              buttonLink="https://yfiob.org/"
+              buttonLink=""
               buttonStatus="inactive"
             />
             
@@ -102,7 +102,7 @@ const Students = () => {
               ]}
               title="Designers"
               description="Work on the entire UX process in a team of designers including user research, prototyping, and case studies."
-              buttonLink="https://yfiob.org/"
+              buttonLink=""
               buttonStatus="inactive"
             />
 
@@ -114,7 +114,7 @@ const Students = () => {
               ]}
               title="Leadership"
               description="Work on product management, agile project management, and team leadership. Improve the Blueprint community."
-              buttonLink="https://yfiob.org/"
+              buttonLink=""
               buttonStatus="inactive"
             />
 
