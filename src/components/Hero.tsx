@@ -1,3 +1,4 @@
+import { max } from 'date-fns';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,9 +9,12 @@ interface HeroProps {
   buttonLink?: string;
   decorative?: boolean;
   imageSrc?: string;
+  maxWidth?: string;
+  maxHeight?: string;
+  shouldAnimate?: boolean;
 }
 
-const Hero = ({ title, description,  decorative = false, buttonText, buttonLink, imageSrc }: HeroProps) => {
+const Hero = ({ title, description,  decorative = false, buttonText, buttonLink, imageSrc, maxWidth = '250px', maxHeight = '250px', shouldAnimate}: HeroProps) => {
   return (
     <section className={`blueprint-grid-bg py-16 md:py-24 px-6 md:px-16 relative overflow-hidden`}>
       {/* Decorative SVGs only if decorative is true */}
@@ -183,7 +187,7 @@ const Hero = ({ title, description,  decorative = false, buttonText, buttonLink,
           </Link>
         </div>
         {imageSrc && (
-          <img src={imageSrc} alt="Hero Image" className='hidden sm:block w-full max-w-[400px] max-h-[400px] mt-8 object-fit-cover' />
+          <img src={imageSrc} alt="Hero Image" style={{ maxWidth, maxHeight }} className={`hidden sm:block w-full mt-8 object-fit-cover ${shouldAnimate ? 'animate-rotate-slight' : ''}`} />
         )}
 
       </div>

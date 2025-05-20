@@ -237,6 +237,15 @@
   }
 }
 
+@keyframes rotate-slight {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
 /* Animation classes with speed variations */
 .animate-cloud-xslow {
   animation: cloud-slide-5 120s linear infinite;
@@ -282,4 +291,8 @@
 }
 .animate-slug-ltr-fastest {
   animation: slug-ltr 60s linear infinite;
+}
+
+.animate-rotate-slight {
+  animation: rotate-slight 2s infinite ease-in-out;
 }

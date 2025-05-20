@@ -16,6 +16,10 @@ const Home = () => {
         description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
         decorative
         buttonText="Learn More"
+        imageSrc="/blueprint/crystalSlug.svg"
+        maxHeight='250px'
+        maxWidth='250px'
+        shouldAnimate={true}
       />
       
       <section className="py-16 md:py-24 px-6">
@@ -39,7 +43,7 @@ const Home = () => {
             
             <div className="md:w-1/2">
               <img 
-                src="src/assets/photos/team.png" 
+                src="/blueprint/team.png" 
                 alt="Blueprint Team" 
                 className="w-full h-auto"
               />

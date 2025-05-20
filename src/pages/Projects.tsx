@@ -11,6 +11,9 @@ const Projects = () => {
         title="Our Projects"
         description="Each year Blueprint works with three or more local nonprofits to create technology solutions that help them better serve their communities."
         buttonText="View All Projects"
+        imageSrc="/blueprint/forchange2.jpg"
+        maxHeight='250px'
+        maxWidth='300px'
       />
       
       <section className="py-16 md:py-24 px-6">
