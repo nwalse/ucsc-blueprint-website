@@ -37,7 +37,7 @@ const Team = () => {
       <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Our Team"
-        description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
+        description="We are a group of passionate individuals dedicated to making a difference in the world through technology and design. Our team is made up of talented designers, developers, and leaders who work together to create innovative solutions."
         buttonText="Meet our Team"
         buttonLink=""
       />

@@ -38,51 +38,51 @@ const Nonprofits = () => {
     {
       title: "Applications Open",
       description:
-        "Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare.",
+        "Blueprint typically opens nonprofit applications in the summer. This is when nonprofits can apply to work with us for the upcoming school year. If the deadline has passed, please reach out to us since we may still have availability or be able to work with you in the future.",
       icon: "icons/calendar.svg",
     },
     {
-      title: "Step 2 Title",
-      description: "Description for step 2.",
+      title: "Apply",
+      description: "Our application process is simple and straightforward. We ask that you fill out a form with your nonprofit's information and project details. This helps us understand your needs and how we can best assist you.",
       icon: "icons/send.svg",
     },
     {
-      title: "Step 3 Title",
-      description: "Description for step 3.",
+      title: "Application Review",
+      description: "We review all applications carefully to ensure that we can provide the best possible service to our partners. We look for projects that align with our mission and values as an organization.",
       icon: "icons/search.svg"
     },
     {
-      title: "Step 3 Title",
-      description: "Description for step 3.",
+      title: "Project Briefing",
+      description: "We may schedule a call or email you to discuss your project in more detail. This is an opportunity for us to ask questions and for you to provide additional information about your organization's needs.",
       icon: "icons/profile.svg"
     },
     {
-      title: "Step 3 Title",
-      description: "Description for step 3.",
+      title: "Decisions",
+      description: "We will notify you of our decision regarding your application. If not selected, we may provide other resources or suggestions for your project. If selected, we will work with you to finalize the details of our partnership.",
       icon: "icons/mail.svg"
     },
     {
-      title: "Step 4 Title",
-      description: "Description for step 4.",
+      title: "Project Statement of Work",
+      description: "Once selected, we will work with you to create a project statement of work (SOW). This document outlines the scope of the project, timelines, and deliverables. It ensures that both parties are on the same page and sets clear expectations for the partnership.",
       icon: "blueprint/bpsmall.svg"
     },
   ];
 
   const buttonActive = false;
-  const buttonLink = "https://yfiob.org/";
+  const buttonLink = "";
 
   return (
     <div>
       <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Nonprofits"
-        description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
+        description="Each year Blueprint partners with nonprofits to provide free software development services. Our team of students works closely with these organizations to create custom solutions that meet their unique needs."
         buttonText="Work with Us"
         buttonLink=""
       />
       </div>
       
-      <section className="py-16 md:py-24 bg-gray-50 px-6">
+      <section className="py-16 md:py-24  px-6">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="lg:col-span-1 flex justify-center">
@@ -95,7 +95,7 @@ const Nonprofits = () => {
             <div className="lg:col-span-1">
               <h2 className="text-3xl font-bold mb-6 font-raleway">Partnerships</h2>
               <p className="mb-6 font-karla">
-                Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare.
+                Work with Blueprint to create custom software solutions that meet your nonprofit's unique needs. Our team of students is dedicated to providing high-quality development services at no cost to you.
               </p>
               <div className="flex justify-left">
               <a
@@ -115,15 +115,15 @@ const Nonprofits = () => {
         </div>
       </section>
       
-      <section className="py-16 md:py-24 px-6">
+      <section className="py-16 md:py-24 px-6 bg-gray-50">
 
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-left font-raleway">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-20 text-left font-raleway">Our Services</h2>
           
           <div className="flex flex-col md:flex-row gap-12 justify-center">
             <ServiceCard 
               title="Web Applications" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
+              description="Web Applications are software applications that run on a web server and can be accessed through a web browser like Chrome. They are designed to work across different devices and platforms, but mostly on laptops and desktops."
               icons={[
                 <img key="web1" src="/icons/server.svg" alt="Web Icon 1" className="h-12 w-12" />,
                 <img key="web2" src="/icons/webPage.svg" alt="Web Icon 2" className="h-12 w-12" />,
@@ -133,7 +133,7 @@ const Nonprofits = () => {
 
             <ServiceCard 
               title="Mobile Applications" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
+              description="Mobile Applications are software applications designed to run on mobile devices such as smartphones and tablets. They can be downloaded from app stores."
               icons={[
                 <img key="mobile1" src="/icons/apple.svg" alt="Mobile Icon 1" className="h-12 w-12" />,
                 <img key="mobile2" src="/icons/phone.svg" alt="Mobile Icon 2" className="h-12 w-12" />,
@@ -143,7 +143,7 @@ const Nonprofits = () => {
 
             <ServiceCard 
               title="Software Tools" 
-              description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
+              description="Tools are software applications that help users perform specific tasks or functions. They can be standalone applications or integrated into larger systems."
               icons={[
                 <img key="mobile1" src="/icons/download.svg" alt="Mobile Icon 1" className="h-12 w-12" />,
                 <img key="mobile2" src="/icons/webPage.svg" alt="Mobile Icon 2" className="h-12 w-12" />,
