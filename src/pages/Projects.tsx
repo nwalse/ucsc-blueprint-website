@@ -7,14 +7,11 @@ import { projects } from '../lib/projectData';
 const Projects = () => {
   return (
     <div>
-      <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Our Projects"
         description="Each year Blueprint works with three or more local nonprofits to create technology solutions that help them better serve their communities."
         buttonText="View All Projects"
-        buttonLink="/projects"
       />
-      </div>
       
       <section className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">

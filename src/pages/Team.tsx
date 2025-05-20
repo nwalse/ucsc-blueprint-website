@@ -34,14 +34,11 @@ const TeamMember = ({ name, role, category }: TeamMemberProps) => {
 const Team = () => {
   return (
     <div>
-      <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Our Team"
         description="We are a group of passionate individuals dedicated to making a difference in the world through technology and design. Our team is made up of talented designers, developers, and leaders who work together to create innovative solutions."
         buttonText="Meet our Team"
-        buttonLink=""
       />
-      </div>
       
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">

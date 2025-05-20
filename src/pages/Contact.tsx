@@ -4,14 +4,11 @@ import Hero from '../components/Hero';
 const Contact = () => {
   return (
     <div>
-      <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Contact Us"
         description="We are always looking for new opportunities to collaborate and create amazing projects. If you have a project in mind or just want to say hi, feel free to reach out!"
         buttonText="Work with Us"
-        buttonLink=""
       />
-      </div>
       
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">

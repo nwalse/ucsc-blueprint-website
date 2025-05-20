@@ -70,14 +70,11 @@ const Students = () => {
 
   return (
     <div>
-      <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Students"
         description="Every year, our teams of student developers and designers learn how to build software for nonprofits. We are always looking for passionate students who want to make a difference in the world through technology."
         buttonText="See Opportunities at Blueprint"
-        buttonLink=""
       />
-      </div>
       
       <section className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">

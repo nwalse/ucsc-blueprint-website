@@ -7,9 +7,10 @@ interface HeroProps {
   buttonText?: string;
   buttonLink?: string;
   decorative?: boolean;
+  imageSrc?: string;
 }
 
-const Hero = ({ title, description,  decorative = false, buttonText, buttonLink }: HeroProps) => {
+const Hero = ({ title, description,  decorative = false, buttonText, buttonLink, imageSrc }: HeroProps) => {
   return (
     <section className={`blueprint-grid-bg py-16 md:py-24 px-6 md:px-16 relative overflow-hidden`}>
       {/* Decorative SVGs only if decorative is true */}
@@ -175,11 +176,14 @@ const Hero = ({ title, description,  decorative = false, buttonText, buttonLink 
         <p className="text-lg md:text-xl mb-8 text-white max-w-md font-karla">
           {description}
         </p>
-        <Link to={buttonLink} className="border border-white text-white hover:bg-white hover:text-blueprint-blue px-3 py-1 font-medium py-2 px-6 transition-colors duration-300">
+          <Link to={buttonLink} onClick={() => window.scrollTo(400, 400)} className="border border-white text-white hover:bg-white hover:text-blueprint-blue px-3 py-1 font-medium py-2 px-6 transition-colors duration-300">
             {buttonText}
           </Link>
 
       </div>
+      {imageSrc && (
+        <img src={imageSrc} alt="Hero Image" />
+      )}
     </section>
   );
 };

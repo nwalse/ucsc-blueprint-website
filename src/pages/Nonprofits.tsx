@@ -73,14 +73,11 @@ const Nonprofits = () => {
 
   return (
     <div>
-      <div onClick={() => window.scrollTo(400, 400)}>
       <Hero 
         title="Nonprofits"
         description="Each year Blueprint partners with nonprofits to provide free software development services. Our team of students works closely with these organizations to create custom solutions that meet their unique needs."
         buttonText="Work with Us"
-        buttonLink=""
       />
-      </div>
       
       <section className="py-16 md:py-24  px-6">
         <div className="max-w-5xl mx-auto">

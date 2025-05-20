@@ -26,19 +26,19 @@ const Navbar = () => {
         </Link>
         
         <div className="hidden md:flex space-x-8">
-          <Link to="/projects" className="text-white hover:text-gray-300 font-medium px-3 py-1">
+          <Link to="/projects" onClick={() => window.scrollTo(0, 0)} className="text-white hover:text-gray-300 font-medium px-3 py-1">
             Projects
           </Link>
-          <Link to="/students" className="text-white hover:text-gray-300 font-medium px-3 py-1">
+          <Link to="/students" onClick={() => window.scrollTo(0, 0)} className="text-white hover:text-gray-300 font-medium px-3 py-1">
             For Students
           </Link>
-          <Link to="/nonprofits" className="text-white hover:text-gray-300 font-medium px-3 py-1">
+          <Link to="/nonprofits" onClick={() => window.scrollTo(0, 0)} className="text-white hover:text-gray-300 font-medium px-3 py-1">
             For Nonprofits
           </Link>
-          <Link to="/team" className="text-white hover:text-gray-300 font-medium px-3 py-1">
+          <Link to="/team" onClick={() => window.scrollTo(0, 0)} className="text-white hover:text-gray-300 font-medium px-3 py-1">
             Team
           </Link>
-          <Link to="/contact" className="border border-white text-white hover:bg-white hover:text-blueprint-blue px-3 py-1 font-medium transition-colors duration-300">
+          <Link to="/contact" onClick={() => window.scrollTo(0, 0)} className="border border-white text-white hover:bg-white hover:text-blueprint-blue px-3 py-1 font-medium transition-colors duration-300">
             Contact Us
           </Link>
         </div>

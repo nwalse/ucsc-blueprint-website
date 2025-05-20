@@ -16,7 +16,6 @@ const Home = () => {
         description="Blueprint strives to make technology accessible and useful for those who assist communities and promote public welfare."
         decorative
         buttonText="Learn More"
-        buttonLink='/nonprofits'
       />
       
       <section className="py-16 md:py-24 px-6">
