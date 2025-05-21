@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard';
 import Carousel from '../components/Carousel';
 import { projects } from '../lib/projectData';
 
-const svgs = import.meta.glob('../assets/partners/*.svg', { eager: true, query: '?url', import: 'default'});
+const partners = import.meta.glob('../assets/partners/*.{png,svg}', { eager: true, query: '?url', import: 'default'});
 
 const Home = () => {
   return (
@@ -224,12 +224,12 @@ const Home = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 font-raleway">Our Partners</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-items-center">
-            {Object.values(svgs).map((src, idx) => (
+            {Object.values(partners).map((src, idx) => (
               <img
                 key={idx}
                 src={src as string}
                 alt={`Partner ${idx + 1}`}
-                className="h-16 w-auto object-contain transition-transform duration-200 hover:scale-105"
+                className="h-16 w-auto object-fill"
               />
             ))}
           </div>
