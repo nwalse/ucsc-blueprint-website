@@ -64,19 +64,49 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-blueprint-blue border-t border-white/10 mt-4 w-full left-0">
           <div className="flex flex-col py-3 max-w-7xl mx-auto">
-            <Link to="/projects" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+            <Link 
+              to="/projects" 
+              className="text-white hover:bg-white/10 py-3 px-6 font-medium"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+            >
               Projects
             </Link>
-            <Link to="/students" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+            <Link 
+              to="/students" 
+              className="text-white hover:bg-white/10 py-3 px-6 font-medium"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+            >
               For Students
             </Link>
-            <Link to="/nonprofits" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+            <Link 
+              to="/nonprofits" 
+              className="text-white hover:bg-white/10 py-3 px-6 font-medium"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+            >
               For Nonprofits
             </Link>
-            <Link to="/team" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+            <Link 
+              to="/team" 
+              className="text-white hover:bg-white/10 py-3 px-6 font-medium"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+            >
               Team
             </Link>
-            <Link to="/contact" className="text-white hover:bg-white/10 py-3 px-6 font-medium">
+            <Link 
+              to="/contact" 
+              className="text-white hover:bg-white/10 py-3 px-6 font-medium"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+            >
               Contact
             </Link>
           </div>
