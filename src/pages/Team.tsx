@@ -10,7 +10,7 @@ interface TeamMemberProps {
 }
 
 const TeamMember = ({ name, role, category }: TeamMemberProps) => {
-  const imagePath = `src/assets/photos/members/${category}/${name}.png`;
+  const imagePath = `/assets/photos/members/${category}/${name}.png`;
   const displayName = name.replace(/-/g, ' ');
 
   return (
