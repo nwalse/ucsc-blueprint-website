@@ -66,9 +66,9 @@ const Students = () => {
         title="Students"
         description="Every year, our teams of student developers and designers learn how to build software for nonprofits. We are always looking for passionate students who want to make a difference in the world through technology."
         buttonText="See Opportunities at Blueprint"
-        imageSrc="/blueprint/forchange2.jpg"
-        maxHeight='250px'
-        maxWidth='300px'
+        imageSrc="/blueprint/giving-day.svg"
+        maxHeight='300px'
+        maxWidth='375px'
       />
       
       <section className="py-16 md:py-24 px-6">

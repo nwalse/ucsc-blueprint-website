@@ -9,11 +9,11 @@ const Projects = () => {
     <div>
       <Hero 
         title="Our Projects"
-        description="Each year Blueprint works with three or more local nonprofits to create technology solutions that help them better serve their communities."
+        description="Each year Blueprint works with three or more local nonprofits to create technology solutions that help them better serve their communities. Each of our teams present project demos to the public at the annual Spring Quarter Blueprint for Change Summit."
         buttonText="View All Projects"
-        imageSrc="/blueprint/forchange2.jpg"
-        maxHeight='250px'
-        maxWidth='300px'
+        imageSrc="/blueprint/bp-summit.svg"
+        maxHeight='300px'
+        maxWidth='375px'
       />
       
       <section className="py-16 md:py-24 px-6">

@@ -65,9 +65,9 @@ const Nonprofits = () => {
         title="Nonprofits"
         description="Each year Blueprint partners with nonprofits to provide free software development services. Our team of students works closely with these organizations to create custom solutions that meet their unique needs."
         buttonText="Work with Us"
-        imageSrc="/blueprint/forchange.jpg"
-        maxHeight='300px'
-        maxWidth='375px'
+        imageSrc="/blueprint/npoHeart.svg"
+        maxHeight='250px'
+        maxWidth='350px'
       />
       
       <section className="py-16 md:py-24  px-6">

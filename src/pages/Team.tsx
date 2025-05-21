@@ -38,9 +38,9 @@ const Team = () => {
         title="Our Team"
         description="We are a group of passionate individuals dedicated to making a difference in the world through technology and design. Our team is made up of talented designers, developers, and leaders who work together to create innovative solutions."
         buttonText="Meet our Team"
-        imageSrc="/blueprint/forchange2.jpg"
-        maxHeight='250px'
-        maxWidth='300px'
+        imageSrc="/blueprint/bp-summit-team.svg"
+        maxHeight='300px'
+        maxWidth='375px'
       />
       
       <section className="py-16 px-6">

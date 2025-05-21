@@ -8,9 +8,9 @@ const Contact = () => {
         title="Contact Us"
         description="We are always looking for new opportunities to collaborate and create amazing projects. If you have a project in mind or just want to say hi, feel free to reach out!"
         buttonText="Work with Us"
-        imageSrc="blueprint/blueprintSend.svg"
-        maxHeight='200px'
-        maxWidth='200px'
+        imageSrc="blueprint/bpSend.svg"
+        maxHeight='275px'
+        maxWidth='250px'
       />
       
       <section className="py-16 px-6">
